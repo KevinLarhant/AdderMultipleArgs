@@ -7,7 +7,7 @@ function adder()
 	{
 		args.forEach(function(val){ res += val(a); });
 		return res;
-	}
+	};
 }
 adder()(0); // 0
 adder()(1); // 0
@@ -21,7 +21,7 @@ function mult(v)
 	return function(e)
 	{
 		return v*e;
-	}
+	};
 }
 
 function sub(x)
@@ -29,7 +29,7 @@ function sub(x)
 	return function(y)
 	{
 		return x-y;
-	}
+	};
 }
 sub(0)(0); // 0
 sub(2)(1); // 1
